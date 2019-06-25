@@ -5,9 +5,12 @@ import {
   StyleSheet,
   TouchableOpacity,
   Text,
-  TextInput
+  TextInput,
+  Image
 } from "react-native";
-import logo from "../assets/logo.png";
+import logo from "../assets/ifma.png";
+
+
 export default class Home extends Component {
   static navigationOptions = {
     headerTitle: "Biblioteca IFMA - Timon"
@@ -20,7 +23,9 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image style={styles.logo} source={logo} />
+        
+          <Image style={styles.logo} source={logo} />
+        
         <TextInput
           style={styles.input}
           autoCorrect={false}
@@ -69,6 +74,8 @@ const styles = StyleSheet.create({
   logo: {
     height: 128,
     width: 138,
-    resizeMode: "center"
+    resizeMode: "center",
+    
   }
+  
 });

@@ -10,11 +10,10 @@ import logo from './assets/logo.png';
 export default createAppContainer(
     createStackNavigator(
         {
-            Home,
-            Login
+            Home
         },
         {
-            initialRouteName: 'Home',
+            //initialRouteName: 'Home',
             defaultNavigationOptions: {
                 headerTintColor: '#000',
                 headerTitle: <Image style={{ marginHorizontal: 20 }} source= { logo } />,
